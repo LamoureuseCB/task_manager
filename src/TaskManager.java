@@ -1,18 +1,18 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Manager implements IManager {
+public class TaskManager implements IManager {
     private List<Task> taskList;
     private List<SubTask> subTaskList;
     private List<Epic> epicList;
 
-    public Manager(List<Task> taskList, List<SubTask> subTaskList, List<Epic> epicList) {
+    public TaskManager(List<Task> taskList, List<SubTask> subTaskList, List<Epic> epicList) {
         this.taskList = new ArrayList<>();
         this.subTaskList = new ArrayList<>();
         this.epicList = new ArrayList<>();
     }
 
-    public Manager() {
+    public TaskManager() {
     }
 
     @Override
